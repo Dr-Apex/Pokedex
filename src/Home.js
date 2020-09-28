@@ -9,7 +9,9 @@ const Home = props => {
   };
   return (
     <View>
+      <Text style={{fontSize: 25}}>Your Pokemon:</Text>
       <FlatList
+        style={{fontSize: 18}}
         data={pokemon}
         keyExtractor={pokemon => pokemon.number}
         renderItem={({ item }) => (

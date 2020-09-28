@@ -13,7 +13,7 @@ const Pokemon = props => {
   const backButton = (
     <View>
       <Link to="/">
-        <Text>Go Back</Text>
+        <Text style={{fontSize: 20}}>Go Back</Text>
       </Link>
     </View>
   );
@@ -29,17 +29,17 @@ const Pokemon = props => {
     <View>
       {backButton}
       <View>
-        <Text>{`#${selectedPokemon.number}`}</Text>
+        <Text style={{fontSize: 18}}>{`#${selectedPokemon.number}`}</Text>
       </View>
       <View>
-        <Text>{`Name: ${selectedPokemon.name}`}</Text>
+        <Text style={{fontSize: 18}}>{`Name: ${selectedPokemon.name}`}</Text>
       </View>
       <View>
-        <Text>{`Type: ${selectedPokemon.type}`}</Text>
+        <Text style={{fontSize: 18}}>{`Type: ${selectedPokemon.type}`}</Text>
       </View>
       <View>
         <Image
-          style={{ width: 50, height: 50 }}
+          style={{ width: 70, height: 70, marginTop: 10 }}
           source={{ uri: selectedPokemon.photoUrl }}
         />
       </View>
